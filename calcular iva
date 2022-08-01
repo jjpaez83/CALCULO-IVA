@@ -1,0 +1,31 @@
+
+package javaapplication17;
+
+import java.util.Scanner;
+
+public class JavaApplication17 {
+// Intoducir el valor de un producto y muestra el iva y el precio total con iva.
+    public static void main(String[] args) {
+        // Variables
+        
+        float vv, iva, pv;
+        
+        // Entrada
+        
+        Scanner teclado = new Scanner (System.in);
+        System.out.print ("Valor de Venta: ");
+        vv = teclado.nextFloat();
+        
+        // Proceso
+        
+        iva = vv * 0.21F;
+        pv = vv + iva;
+        
+        // Salida
+        
+        System.out.println("");
+        System.out.println("IVA: " + iva);
+        System.out.println("Precio de Venta: " + pv+ "€");
+    }
+    
+}
